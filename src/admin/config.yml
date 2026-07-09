@@ -1,0 +1,127 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded photos are stored, and the URL they are served from
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+site_url: /
+display_url: /
+publish_mode: simple
+
+collections:
+  - name: pages
+    label: "Website Pages"
+    description: "Edit the text and photos on each page. Click Publish to make changes live."
+    files:
+      - name: home
+        label: "Home Page"
+        file: "src/_data/home.json"
+        fields:
+          - { label: "Hero heading", name: heroTitle, widget: string }
+          - { label: "Hero subtitle", name: heroSubtitle, widget: text }
+          - { label: "Hero photo", name: heroImage, widget: image }
+          - { label: "Button text", name: ctaLabel, widget: string }
+          - { label: "Button link", name: ctaUrl, widget: string, hint: "e.g. /contact/" }
+          - { label: "Welcome heading", name: welcomeHeading, widget: string }
+          - { label: "Welcome text", name: welcomeBody, widget: text, hint: "Leave a blank line between paragraphs." }
+          - { label: "Welcome photo", name: welcomeImage, widget: image }
+          - label: "Highlight cards"
+            name: highlights
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+      - name: mission
+        label: "Our Mission Page"
+        file: "src/_data/mission.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Photo", name: image, widget: image }
+          - { label: "Intro", name: intro, widget: text }
+          - { label: "Body text", name: body, widget: text, hint: "Leave a blank line between paragraphs." }
+      - name: staff
+        label: "Our Staff Page"
+        file: "src/_data/staff.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Administration heading", name: adminHeading, widget: string }
+          - { label: "Administration text", name: adminBody, widget: text }
+          - { label: "Teachers heading", name: staffHeading, widget: string }
+          - { label: "Teachers text", name: staffBody, widget: text }
+          - label: "Staff members"
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Bio, name: bio, widget: text }
+      - name: program
+        label: "Our Program Page"
+        file: "src/_data/program.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Photo", name: image, widget: image }
+          - { label: "Intro", name: intro, widget: text }
+          - { label: "Schedules text", name: schedules, widget: text, hint: "Leave a blank line between paragraphs." }
+          - { label: "Goals heading", name: goalsHeading, widget: string }
+          - label: "Goals"
+            name: goals
+            widget: list
+            field: { label: Goal, name: goal, widget: string }
+          - { label: "Curriculum heading", name: curriculumHeading, widget: string }
+          - { label: "Curriculum text", name: curriculumBody, widget: text, hint: "Leave a blank line between paragraphs." }
+          - { label: "What makes us different heading", name: differentHeading, widget: string }
+          - label: "What makes us different"
+            name: different
+            widget: list
+            field: { label: Point, name: point, widget: string }
+      - name: ourday
+        label: "Our Day Page"
+        file: "src/_data/ourday.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Photo", name: image, widget: image }
+          - { label: "Intro", name: intro, widget: text }
+          - label: "Daily schedule"
+            name: schedule
+            widget: list
+            fields:
+              - { label: Time, name: time, widget: string }
+              - { label: Activity, name: activity, widget: string }
+              - { label: Description, name: description, widget: text }
+          - { label: "Footnote", name: note, widget: string, required: false }
+      - name: contact
+        label: "Contact Page"
+        file: "src/_data/contact.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Intro", name: intro, widget: text }
+          - { label: "Phone", name: phone, widget: string }
+          - { label: "Email", name: email, widget: string, required: false }
+          - { label: "Address line 1", name: addressLine1, widget: string }
+          - { label: "Address line 2", name: addressLine2, widget: string }
+          - { label: "Location note", name: location, widget: string }
+          - { label: "Map embed URL", name: mapEmbed, widget: string, required: false }
+          - { label: "Enrollment heading", name: enrollmentHeading, widget: string }
+          - { label: "Enrollment text", name: enrollmentBody, widget: text, hint: "Leave a blank line between paragraphs." }
+      - name: site
+        label: "Site Settings (name, phone, menu)"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Preschool name", name: name, widget: string }
+          - { label: "Tagline", name: tagline, widget: string }
+          - { label: "Phone", name: phone, widget: string }
+          - { label: "Email", name: email, widget: string, required: false }
+          - { label: "Address line 1", name: addressLine1, widget: string }
+          - { label: "Address line 2", name: addressLine2, widget: string }
+          - { label: "Location note", name: location, widget: string }
+          - { label: "Accreditation line", name: accreditation, widget: string }
+          - label: "Navigation menu"
+            name: nav
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Link, name: url, widget: string }

@@ -1,0 +1,39 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ contact.heading }}</h1>
+    <p class="lead">{{ contact.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-copy">
+      <div class="contact-block">
+        <h3>Visit Us</h3>
+        <p>{{ contact.location }}<br>{{ contact.addressLine1 }}<br>{{ contact.addressLine2 }}</p>
+      </div>
+      <div class="contact-block">
+        <h3>Call Us</h3>
+        <p><a href="tel:{{ contact.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ contact.phone }}</a></p>
+        {% if contact.email %}<p><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>{% endif %}
+      </div>
+    </div>
+    <div class="split-media">
+      {% if contact.mapEmbed %}
+      <iframe class="map" src="{{ contact.mapEmbed }}" title="Map to Blessed Beginnings Preschool" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container prose">
+    <h2>{{ contact.enrollmentHeading }}</h2>
+    {% for p in contact.enrollmentBody.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+  </div>
+</section>

@@ -1,0 +1,13 @@
+{
+  "name": "blessed-beginnings-preschool",
+  "version": "1.0.0",
+  "description": "Website for Blessed Beginnings Preschool, Holliston MA",
+  "scripts": {
+    "start": "eleventy --serve --port=8080",
+    "build": "eleventy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

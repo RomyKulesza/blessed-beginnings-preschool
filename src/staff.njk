@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Our Staff
+permalink: /staff/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ staff.heading }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <h2>{{ staff.adminHeading }}</h2>
+    <p>{{ staff.adminBody }}</p>
+    <h2>{{ staff.staffHeading }}</h2>
+    <p>{{ staff.staffBody }}</p>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="staff-grid">
+      {% for person in staff.team %}
+      <article class="staff-card">
+        <div class="staff-photo">
+          <img src="{{ person.photo }}" alt="{{ person.name }}" loading="lazy">
+        </div>
+        <div class="staff-body">
+          <h3>{{ person.name }}</h3>
+          <p class="staff-role">{{ person.role }}</p>
+          <p>{{ person.bio }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

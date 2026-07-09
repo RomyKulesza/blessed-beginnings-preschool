@@ -1,0 +1,15 @@
+{
+  "heroTitle": "Welcome to Blessed Beginnings Preschool",
+  "heroSubtitle": "A world of wonder, creativity, and gentle growth awaits your child in Holliston, Massachusetts.",
+  "heroImage": "/assets/images/classroom-play-area.jpg",
+  "ctaLabel": "Schedule a Tour",
+  "ctaUrl": "/contact/",
+  "welcomeHeading": "A Nurturing Place to Grow",
+  "welcomeBody": "Welcome to Blessed Beginnings Preschool, located at Christ The King Church in Holliston, Massachusetts! We are an early education preschool for children between 2 years 9 months through 6 years old, serving Holliston and the surrounding communities of Ashland, Milford, Medway, Hopkinton and beyond. Our comprehensive program emphasizes our deep commitment to children's success and sense of well-being.\n\nOur program is licensed by the MA Department of Early Education and Care, and we also meet the high standards of the National Association for the Education of Young Children (NAEYC). Please browse our site to learn more about how our program meets the needs and enriches the lives of young children and their families.",
+  "welcomeImage": "/assets/images/classroom.jpg",
+  "highlights": [
+    { "title": "Play-Based Learning", "text": "A curriculum that grows creativity, self-esteem, and independence through meaningful, hands-on play." },
+    { "title": "Small Class Sizes", "text": "A low teacher-to-child ratio so every child receives the individual attention they deserve." },
+    { "title": "NAEYC Accredited", "text": "We meet the highest national standards for quality early childhood education." }
+  ]
+}

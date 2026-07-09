@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Our Day
+permalink: /our-day/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ ourday.heading }}</h1>
+    <p class="lead">{{ ourday.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="schedule">
+      {% for slot in ourday.schedule %}
+      <div class="schedule-row">
+        <div class="schedule-time">{{ slot.time }}</div>
+        <div class="schedule-detail">
+          <h3>{{ slot.activity }}</h3>
+          <p>{{ slot.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if ourday.note %}<p class="note">* {{ ourday.note }}</p>{% endif %}
+  </div>
+</section>

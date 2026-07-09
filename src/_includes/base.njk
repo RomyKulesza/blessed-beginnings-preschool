@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.tagline }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span class="brand-text">
+          <span class="brand-name">Blessed Beginnings</span>
+          <span class="brand-sub">Preschool · Holliston, MA</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open'); this.setAttribute('aria-expanded', document.body.classList.contains('nav-open'))">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          {% for item in site.nav %}
+          <li><a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-brand">Blessed Beginnings Preschool</h3>
+        <p>{{ site.location }}<br>{{ site.addressLine1 }}<br>{{ site.addressLine2 }}</p>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p><a href="tel:{{ site.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ site.phone }}</a></p>
+        {% if site.email %}<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>{% endif %}
+        <p><a href="/contact/">Schedule a tour →</a></p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          {% for item in site.nav %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>{{ site.accreditation }}</p>
+      <p>© {% year %} Blessed Beginnings Preschool. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Welcome
+permalink: /
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ site.tagline }}</p>
+      <h1>{{ home.heroTitle }}</h1>
+      <p class="lead">{{ home.heroSubtitle }}</p>
+      <a class="btn btn-primary" href="{{ home.ctaUrl }}">{{ home.ctaLabel }}</a>
+    </div>
+    <div class="hero-media">
+      <img src="{{ home.heroImage }}" alt="Children playing in the Blessed Beginnings classroom" loading="eager">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-media">
+      <img src="{{ home.welcomeImage }}" alt="Inside the Blessed Beginnings classroom" loading="lazy">
+    </div>
+    <div class="split-copy">
+      <h2>{{ home.welcomeHeading }}</h2>
+      {% for p in home.welcomeBody.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="cards">
+      {% for item in home.highlights %}
+      <div class="card">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-inner">
+    <h2>Come see us in person</h2>
+    <p>Schedule a visit to meet our teachers and explore our classroom.</p>
+    <a class="btn btn-light" href="/contact/">Schedule a Tour</a>
+  </div>
+</section>

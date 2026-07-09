@@ -1,0 +1,55 @@
+---
+layout: base.njk
+title: Our Program
+permalink: /program/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ program.heading }}</h1>
+    <p class="lead">{{ program.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-media">
+      <img src="{{ program.image }}" alt="A learning center in the classroom" loading="lazy">
+    </div>
+    <div class="split-copy">
+      {% for p in program.schedules.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container prose">
+    <h2>{{ program.goalsHeading }}</h2>
+    <ul class="check-list">
+      {% for goal in program.goals %}<li>{{ goal }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <h2>{{ program.curriculumHeading }}</h2>
+    {% for p in program.curriculumBody.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container prose">
+    <h2>{{ program.differentHeading }}</h2>
+    <ul class="check-list">
+      {% for item in program.different %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-inner">
+    <h2>Ready to learn more?</h2>
+    <p>Reach out for current tuition rates, schedules, and enrollment details.</p>
+    <a class="btn btn-light" href="/contact/">Contact the Office</a>
+  </div>
+</section>

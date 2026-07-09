@@ -1,0 +1,33 @@
+{
+  "heading": "Our Staff",
+  "adminHeading": "Our Administration",
+  "adminBody": "Blessed Beginnings is a non-profit preschool licensed by the Commonwealth of Massachusetts, complying with all regulations set by the Department of Early Education and Care. Our director oversees the program with the support of an advisory team. The advisory team members are parents, educators, advocates of young children, and members of Christ The King Lutheran Church.",
+  "staffHeading": "Our Teachers",
+  "staffBody": "The Blessed Beginnings staff are DEEC certified, experienced and dedicated teachers. They are devoted to providing for your child a \"blessed beginning\" as they start their journey in education.",
+  "team": [
+    {
+      "name": "Romy Kulesza",
+      "role": "Director / Teacher",
+      "photo": "/assets/images/staff-romy.jpg",
+      "bio": "Romy has been in the field of early education and care for over 35 years. She earned her Bachelor's Degree in Early Childhood Education and a minor in Psychology from Framingham State College. Romy has worked with all age groups over the years, from infants through school-age children, and was the Director at two large programs for over 14 years. Early childhood is her passion, and she truly enjoys providing wonderful programs to families, working with caring and dedicated teachers, and seeing little smiling faces each day. When Romy is not at Blessed Beginnings, she enjoys spending time with her husband and daughter, reading, and DIY projects at home."
+    },
+    {
+      "name": "Holly Kasper",
+      "role": "Lead Teacher",
+      "photo": "/assets/images/staff-holly.jpg",
+      "bio": "Holly is a graduate of the University of Rochester in Rochester, NY, with a Bachelor's Degree in Political Science and a Minor in Psychology–Social Sciences. She has worked with children teaching figure skating, hockey, and karate, and coaching her children's soccer teams. Holly enjoyed this so much that she decided to begin a career in teaching, and she earned her Department of Early Education and Care Lead Teacher certification while working at Sunshine Preschool and Blessed Beginnings. Holly is married with three children and in her spare time enjoys bicycling, karate, and singing in the Christ the King Church Choir."
+    },
+    {
+      "name": "Lauren Long",
+      "role": "Teacher",
+      "photo": "/assets/images/staff-lauren.jpg",
+      "bio": "Lauren is a graduate of Curry College in Milton, MA. She earned a Bachelor's degree in Health and Wellness with a minor in Education. Before joining Blessed Beginnings, Lauren taught at two different programs with preschool and pre-k aged children. Lauren took a break from teaching to focus on raising her two children, and now that both attend school full time, she feels it's the right time to return to the classroom. In her spare time, Lauren enjoys spending time with her family, fishing, relaxing at the beach, and every craft and project that she can find."
+    },
+    {
+      "name": "Terri Beckerman",
+      "role": "Assistant Teacher",
+      "photo": "/assets/images/staff-terri.jpg",
+      "bio": "Terri is a graduate of Westfield State University, with a Bachelor of Science Degree in Criminal Justice and a minor in Psychology. She was employed by the Massachusetts Department of Correction for 20 years as a Correctional Program Officer. Terri was a Sunday school teacher and volunteered at Holliston Public Schools when her children were young. Before joining Blessed Beginnings, Terri worked at a local preschool as a teacher's assistant for over 8 years. Outside of work, Terri enjoys golfing, gardening, and spending time with her family and friends in New Hampshire."
+    }
+  ]
+}

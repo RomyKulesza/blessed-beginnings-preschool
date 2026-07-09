@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Our Mission
+permalink: /mission/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ mission.heading }}</h1>
+    <p class="lead">{{ mission.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-media">
+      <img src="{{ mission.image }}" alt="A gathering space in the Blessed Beginnings classroom" loading="lazy">
+    </div>
+    <div class="split-copy">
+      {% for p in mission.body.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-inner">
+    <h2>Questions about our program?</h2>
+    <p>We'd love to tell you more about Blessed Beginnings.</p>
+    <a class="btn btn-light" href="/contact/">Get in Touch</a>
+  </div>
+</section>
