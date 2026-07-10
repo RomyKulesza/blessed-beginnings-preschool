@@ -88,15 +88,15 @@ Get an embed link and paste it into a **Video** section:
 - **Cost:** free on both GitHub and Netlify at this site's size.
 - **Backups / history:** every change is saved forever in GitHub — nothing is ever truly lost, and a developer can undo any change.
 - **You can't break it permanently.** If something looks off, just edit again and re-publish.
-- **What needs a developer:** only the visual design and color theme (set to match the rainbow logo). All words, photos, pages, and menu links are yours to change.
+- **Nothing needs a developer for normal use.** Words, photos, pages, menu links — and even the site's **colors and fonts** — are all editable in `/admin`. To change the look, open **Website Pages → Design — Colors & Fonts**, adjust any color or pick a new font, and Publish. It updates across the whole site.
 
 ### A couple of content notes (from the old Joomla site)
 - **Tuition rates** and the **school calendar** were out of date on the old site (2019/2020 and 2024/2025), so they were left off. Add current ones anytime via a new page or the Contact page.
 - The **staff photo of Romy** is low-resolution (that's all the old site had) — upload a sharper one via **Website Pages → Our Staff Page**.
 
 ### Who does what
-- **Everyday content** (text, photos, pages, menu): you, through `/admin`.
-- **Design changes, custom domain setup, or troubleshooting the build:** a developer, using the project folder.
+- **Everything about the website's content and look** — text, photos, pages, menu, colors, and fonts: you, through `/admin`.
+- **Only rare technical tasks** (first-time custom domain hookup, or if the hosting ever needs attention): a developer. Nothing about editing the site requires one.
 
 ---
 

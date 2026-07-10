@@ -129,6 +129,22 @@ collections:
             fields:
               - { label: Label, name: label, widget: string }
               - { label: Link, name: url, widget: string }
+      - name: theme
+        label: "Design — Colors & Fonts"
+        file: "src/_data/theme.json"
+        description: "Change the whole site's look. Colors update everywhere; fonts change all headings and text."
+        fields:
+          - { label: "Main color (buttons & links)", name: primary, widget: color }
+          - { label: "Text color", name: text, widget: color }
+          - { label: "Page background color", name: background, widget: color }
+          - { label: "Rainbow — Red", name: red, widget: color }
+          - { label: "Rainbow — Orange", name: orange, widget: color }
+          - { label: "Rainbow — Yellow", name: yellow, widget: color }
+          - { label: "Rainbow — Green", name: green, widget: color }
+          - { label: "Rainbow — Blue", name: blue, widget: color }
+          - { label: "Rainbow — Purple", name: purple, widget: color }
+          - { label: "Heading font", name: headingFont, widget: select, options: ["Fredoka", "Baloo 2", "Quicksand", "Poppins", "Nunito", "Comfortaa"], default: "Fredoka" }
+          - { label: "Body font", name: bodyFont, widget: select, options: ["Nunito Sans", "Nunito", "Open Sans", "Lato", "Poppins", "Mulish"], default: "Nunito Sans" }
 
   - name: newpages
     label: "Add / Edit Pages"

@@ -96,4 +96,16 @@ Paste that link into any **Video** section (or the Home Page's "Virtual tour vid
 
 ---
 
-*Questions about the design or colors (which are set to match the rainbow logo)? Those are the only things that need a developer — everything else is yours to change.*
+## 8. Changing the colors or fonts
+
+Want a different look? You can change that too — no developer needed.
+
+1. Click **Website Pages → Design — Colors & Fonts**.
+2. Change the **Main color** (buttons and links), the **text** or **background** color, any of the six **rainbow** colors, or pick a new **heading/body font**.
+3. Click **Publish → Publish now**. The new look applies across the entire website.
+
+> 💡 The colors are set to match your rainbow logo. If you experiment and want to get back, the original values are: Main color `#3aa935`, Text `#262626`, Background `#fbf8f2`, and rainbow Red `#e30613`, Orange `#ec6608`, Yellow `#ffc700`, Green `#3aa935`, Blue `#0072bc`, Purple `#8f2d8f`.
+
+---
+
+*Everything on this website — words, photos, pages, menu, colors, and fonts — is yours to change right here. Nothing requires a developer.*
