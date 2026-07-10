@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blessed Beginnings Preschool — Website Guide</title>
+<style>
+  :root{--green:#3aa935;--ink:#262626;--muted:#5c5f57;--cream:#fbf8f2;}
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;max-width:820px;margin:0 auto;padding:40px 24px 80px;background:#fff;font-size:17px}
+  .rainbow{height:8px;border-radius:8px;background:linear-gradient(90deg,#e30613 0 16.6%,#ec6608 0 33.3%,#ffc700 0 50%,#3aa935 0 66.6%,#0072bc 0 83.3%,#8f2d8f 0 100%);margin-bottom:28px}
+  h1{font-size:2rem;line-height:1.2}
+  h1,h2,h3{color:#1f2a1c}
+  h2{margin-top:2.4em;border-bottom:2px solid #eee;padding-bottom:.3em}
+  h3{margin-top:1.8em}
+  a{color:#2f7a2b}
+  code{background:#f3efe6;padding:2px 6px;border-radius:5px;font-size:.92em}
+  blockquote{border-left:4px solid var(--green);margin:1.2em 0;padding:.4em 1em;background:var(--cream);border-radius:0 8px 8px 0;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:1.2em 0}
+  th,td{border:1px solid #e5e2d8;padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:var(--cream)}
+  ol>li,ul>li{margin:.35em 0}
+  hr{border:0;border-top:1px solid #eee;margin:2.5em 0}
+</style>
+</head><body>
+<div class="rainbow"></div>
+<h1>Blessed Beginnings Preschool Website — Start Here</h1>
+<p>Welcome! This is your new website, and this guide has <strong>everything you need to run it yourself</strong> — no web designer or developer required.</p>
+<p>It has three parts: <strong>Part A</strong> — putting the site online, <strong>Part B</strong> — editing it, and <strong>Part C</strong> — things to know. Follow Part A once to get online; after that you’ll live in Part B. Take it one numbered step at a time — you’ve got this. 🌈</p>
+<blockquote>
+<p><strong>Tip:</strong> Do Part A on a computer (not a phone), and give yourself about 20–30 minutes for the one-time setup.</p>
+</blockquote>
+<hr>
+<h1>PART A — Putting the site online (one-time setup)</h1>
+<p>You do this <strong>once</strong>. It uses two free services:</p>
+<ul>
+<li><strong>GitHub</strong> — stores the website’s files.</li>
+<li><strong>Netlify</strong> — hosts the site (gives it a web address) and powers the <code>/admin</code> editor login.</li>
+</ul>
+<p>Both are free for a site this size.</p>
+<h3>Step 1 — Create a free GitHub account</h3>
+<ol>
+<li>Go to <strong><a href="http://github.com">github.com</a></strong> → <strong>Sign up</strong>. Use the preschool’s email.</li>
+<li>Verify the email and finish signup.</li>
+</ol>
+<h3>Step 2 — Create a repository and upload the website files (drag &amp; drop, no coding)</h3>
+<ol>
+<li><strong>Unzip</strong> the website files you were sent (you’ll get a folder called <code>blessed-beginnings-preschool</code>).</li>
+<li>On GitHub, click the <strong>+</strong> in the top-right corner → <strong>New repository.</strong></li>
+<li>Name it <code>blessed-beginnings-preschool</code>, leave it set to <strong>Public</strong>, and click <strong>Create repository.</strong></li>
+<li>On the next screen, click the blue link that says <strong>“uploading an existing file.”</strong></li>
+<li>Open the unzipped folder on your computer, <strong>select everything inside it</strong> (all the files and folders — use Ctrl+A / Cmd+A), and <strong>drag them into the upload box</strong> in your browser.</li>
+<li>When the files finish uploading, scroll down and click the green <strong>Commit changes</strong> button.</li>
+</ol>
+<p>Your website’s files are now on GitHub. ✅ <em>(No command line, no coding — just dragging files.)</em></p>
+<h3>Step 3 — Create a free Netlify account and connect the site</h3>
+<ol>
+<li>Go to <strong><a href="http://netlify.com">netlify.com</a></strong> → <strong>Sign up</strong> → choose <strong>“Sign up with GitHub”</strong> (easiest).</li>
+<li>Click <strong>Add new site → Import an existing project → GitHub</strong>.</li>
+<li>Authorize Netlify to access GitHub, then pick the <code>blessed-beginnings-preschool</code> repository.</li>
+<li>Netlify already knows how to build it (settings are included). Click <strong>Deploy</strong>.</li>
+<li>After ~1 minute you get a live address like <code>random-name.netlify.app</code>. Your site is on the internet! 🎉
+<em>(You can rename it: Site configuration → Change site name → e.g. <code>blessed-beginnings</code>.)</em></li>
+</ol>
+<h3>Step 4 — Turn on the editor login (Netlify Identity)</h3>
+<ol>
+<li>In your Netlify site, open <strong>Site configuration → Identity</strong> and click <strong>Enable Identity</strong>.</li>
+<li>Under <strong>Identity → Registration</strong>, set it to <strong>Invite only</strong> (so only staff can log in).</li>
+<li>Under <strong>Identity → Services → Git Gateway</strong>, click <strong>Enable Git Gateway</strong>.
+<em>(This is what lets the <code>/admin</code> editor save your changes.)</em></li>
+</ol>
+<h3>Step 5 — Invite yourself (and any other editors)</h3>
+<ol>
+<li>Still under <strong>Identity</strong>, click <strong>Invite users</strong> and enter the email(s) of whoever will edit the site.</li>
+<li>Each person gets an email → they click the link → set a password.</li>
+<li>They can now log in at <strong>your-address/admin</strong>.</li>
+</ol>
+<h3>Step 6 (optional) — Use your real web address</h3>
+<p>To use <code>blessedbeginningspreschool.org</code> instead of the <code>.netlify.app</code> name:</p>
+<ol>
+<li>Netlify → <strong>Domain management → Add a domain</strong> → type your domain.</li>
+<li>Follow Netlify’s on-screen instructions to point the domain (done at wherever the domain was purchased, e.g. GoDaddy). Netlify adds a free security certificate automatically.</li>
+</ol>
+<p><strong>✅ Once Steps 1–5 are done, the site is live and fully editable.</strong></p>
+<hr>
+<h1>PART B — Making edits (everyday use)</h1>
+<h3>Logging in</h3>
+<ol>
+<li>Go to your website address + <strong><code>/admin</code></strong> (e.g. <code>blessedbeginningspreschool.org/admin</code>).</li>
+<li>Click <strong>Login with Netlify Identity</strong>, enter your email and password.</li>
+</ol>
+<h3>Change words on a page</h3>
+<p>Website Pages → pick a page → edit the boxes → <strong>Publish → Publish now</strong>. Live in ~1 minute.
+<em>(Blank line between paragraphs = new paragraph.)</em></p>
+<h3>Replace a photo</h3>
+<p>Open the page → click the photo → <strong>Upload</strong> a new one → <strong>Publish</strong>.
+Or use <strong>Media</strong> (top of dashboard) to manage every image in one place.</p>
+<h3>Add a whole new page</h3>
+<ol>
+<li><strong>Add / Edit Pages → New Page</strong>.</li>
+<li>Give it a title, pick a header color, leave <strong>“Show in top menu?”</strong> on.</li>
+<li>Under <strong>Sections</strong>, click <strong>Add Section</strong> and choose from:
+Heading · Text · Image · Image + Text · <strong>Photo Gallery</strong> · Info Cards · <strong>Video</strong> · Buttons · <strong>Color Banner</strong>.</li>
+<li>Add/drag/delete sections as you like → <strong>Publish</strong>. It’s live and in the menu automatically.</li>
+</ol>
+<h3>Change the menu, phone, address, or logo</h3>
+<p>Website Pages → <strong>Site Settings</strong> → edit → <strong>Publish</strong>.</p>
+<h3>Add a video</h3>
+<p>Get an embed link and paste it into a <strong>Video</strong> section:</p>
+<ul>
+<li><strong>YouTube:</strong> <code>https://www.youtube.com/embed/VIDEO-ID</code></li>
+<li><strong>Google Drive:</strong> set the file to <em>“Anyone with the link,”</em> then use <code>https://drive.google.com/file/d/FILE-ID/preview</code></li>
+</ul>
+<blockquote>
+<p>📘 A friendlier, illustrated version of this is in <strong><a href="http://EDITOR-GUIDE.md">EDITOR-GUIDE.md</a></strong>.</p>
+</blockquote>
+<hr>
+<h1>PART C — Good to know</h1>
+<ul>
+<li><strong>How publishing works:</strong> when you click <em>Publish</em>, your change is saved to GitHub, Netlify automatically rebuilds the site, and it’s live in about a minute. You never touch code.</li>
+<li><strong>Cost:</strong> free on both GitHub and Netlify at this site’s size.</li>
+<li><strong>Backups / history:</strong> every change is saved forever in GitHub — nothing is ever truly lost, and a developer can undo any change.</li>
+<li><strong>You can’t break it permanently.</strong> If something looks off, just edit again and re-publish.</li>
+<li><strong>Nothing needs a developer for normal use.</strong> Words, photos, pages, menu links — and even the site’s <strong>colors and fonts</strong> — are all editable in <code>/admin</code>. To change the look, open <strong>Website Pages → Design — Colors &amp; Fonts</strong>, adjust any color or pick a new font, and Publish. It updates across the whole site.</li>
+</ul>
+<h3>A couple of content notes (from the old Joomla site)</h3>
+<ul>
+<li><strong>Tuition rates</strong> and the <strong>school calendar</strong> were out of date on the old site (2019/2020 and 2024/2025), so they were left off. Add current ones anytime via a new page or the Contact page.</li>
+<li>The <strong>staff photo of Romy</strong> is low-resolution (that’s all the old site had) — upload a sharper one via <strong>Website Pages → Our Staff Page</strong>.</li>
+</ul>
+<h3>Who does what</h3>
+<ul>
+<li><strong>Everything about the website’s content and look</strong> — text, photos, pages, menu, colors, and fonts: you, through <code>/admin</code>.</li>
+<li><strong>Only rare technical tasks</strong> (first-time custom domain hookup, or if the hosting ever needs attention): a developer. Nothing about editing the site requires one.</li>
+</ul>
+<hr>
+<p><em>Site built with Eleventy (site generator) + Decap CMS (the no-code editor) + Netlify (hosting). All free, open tools.</em></p>
+
+</body></html>

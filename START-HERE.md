@@ -2,7 +2,7 @@
 
 Welcome! This is your new website, and this guide has **everything you need to run it yourself** — no web designer or developer required.
 
-It has three parts: **(A)** putting the site online, **(B)** editing it, and **(C)** things to know. Follow Part A once to get online; after that you'll live in Part B. Take it one numbered step at a time — you've got this. 🌈
+It has three parts: **Part A** — putting the site online, **Part B** — editing it, and **Part C** — things to know. Follow Part A once to get online; after that you'll live in Part B. Take it one numbered step at a time — you've got this. 🌈
 
 > **Tip:** Do Part A on a computer (not a phone), and give yourself about 20–30 minutes for the one-time setup.
 
