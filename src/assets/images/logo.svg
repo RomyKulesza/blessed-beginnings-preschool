@@ -1,18 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="470" viewBox="0 0 1380 470" role="img" aria-label="Blessed Beginnings Preschool">
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="470" viewBox="0 0 1360 470" role="img" aria-label="Blessed Beginnings Preschool">
   <g fill="none" stroke-linecap="butt">
-    <path d="M44 360 A196 196 0 0 1 436 360" stroke="#e4001b" stroke-width="44"/>
-    <path d="M90 360 A150 150 0 0 1 390 360" stroke="#f39200" stroke-width="44"/>
-    <path d="M136 360 A104 104 0 0 1 344 360" stroke="#ffd500" stroke-width="44"/>
-    <path d="M182 360 A58 58 0 0 1 298 360" stroke="#3aaa35" stroke-width="44"/>
+    <path d="M40 366 A210 210 0 0 1 460 366" stroke="#e30613" stroke-width="30"/>
+    <path d="M70 366 A180 180 0 0 1 430 366" stroke="#ec6608" stroke-width="30"/>
+    <path d="M100 366 A150 150 0 0 1 400 366" stroke="#ffd500" stroke-width="30"/>
+    <path d="M130 366 A120 120 0 0 1 370 366" stroke="#3aa935" stroke-width="30"/>
+    <path d="M160 366 A90 90 0 0 1 340 366" stroke="#0069b4" stroke-width="30"/>
+    <path d="M190 366 A60 60 0 0 1 310 366" stroke="#8f2d8f" stroke-width="30"/>
   </g>
-  <!-- white heart knockout over the arcs -->
-  <path d="M240 356 c-46 -52 -120 -12 -120 44 c0 44 60 84 120 120 c60 -36 120 -76 120 -120 c0 -56 -74 -96 -120 -44 z" fill="#ffffff"/>
+  <!-- white brushstroke heart over the arcs -->
+  <path d="M250 356 c-52 -60 -134 -14 -134 50 c0 50 68 96 134 138 c66 -42 134 -88 134 -138 c0 -64 -82 -110 -134 -50 z" fill="#ffffff"/>
   <!-- red heart -->
-  <path d="M240 372 c-30 -34 -80 -8 -80 30 c0 30 40 56 80 80 c40 -24 80 -50 80 -80 c0 -38 -50 -64 -80 -30 z" fill="#e4001b"/>
+  <path d="M250 376 c-34 -40 -90 -10 -90 34 c0 34 46 64 90 92 c44 -28 90 -58 90 -92 c0 -44 -56 -74 -90 -34 z" fill="#e30613"/>
   <!-- wordmark -->
   <g fill="#1a1a1a" font-family="Georgia, 'Times New Roman', serif">
-    <text x="500" y="188" font-size="132" font-weight="700" letter-spacing="2">BLESSED</text>
-    <text x="500" y="312" font-size="132" font-weight="700" letter-spacing="1">BEGINNINGS</text>
-    <text x="503" y="404" font-size="60" font-weight="500" letter-spacing="24">PRESCHOOL</text>
+    <text x="520" y="190" font-size="130" font-weight="700" letter-spacing="2">BLESSED</text>
+    <text x="520" y="312" font-size="130" font-weight="700" letter-spacing="1">BEGINNINGS</text>
+    <text x="523" y="402" font-size="58" font-weight="500" letter-spacing="23">PRESCHOOL</text>
   </g>
 </svg>

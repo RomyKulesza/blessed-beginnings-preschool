@@ -1,13 +1,22 @@
 :root {
-  --green: #5b7b52;
-  --green-dark: #43603c;
-  --cream: #fbf7ee;
-  --cream-soft: #f3ecdd;
-  --ink: #33372e;
-  --muted: #6b6f63;
-  --accent: #e8a34d;
+  /* Rainbow palette drawn from the Blessed Beginnings logo */
+  --red: #e30613;
+  --orange: #ec6608;
+  --yellow: #ffc700;
+  --green: #3aa935;
+  --blue: #0072bc;
+  --purple: #8f2d8f;
+
+  --green-dark: #2f8a2b;
+  --cream: #fbf8f2;
+  --cream-soft: #f4eee2;
+  --ink: #262626;
+  --muted: #63665f;
+  --accent: var(--orange);
   --accent-soft: #f6d9a8;
-  --lav: #cfc3e6;
+  --primary: var(--green);
+  --primary-dark: var(--green-dark);
+  --rainbow: linear-gradient(90deg, var(--red) 0 16.6%, var(--orange) 0 33.3%, var(--yellow) 0 50%, var(--green) 0 66.6%, var(--blue) 0 83.3%, var(--purple) 0 100%);
   --white: #ffffff;
   --radius: 18px;
   --radius-lg: 28px;
@@ -30,7 +39,7 @@ body {
 img { max-width: 100%; display: block; }
 a { color: var(--green-dark); }
 
-h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--green-dark); font-weight: 600; }
+h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--ink); font-weight: 600; }
 h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); margin: 0 0 .4em; }
 h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); margin: 0 0 .5em; }
 h3 { font-size: 1.3rem; margin: 0 0 .3em; }
@@ -55,10 +64,11 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .btn-light { background: #fff; color: var(--green-dark); }
 
 /* Header */
-.site-header { position: sticky; top: 0; z-index: 50; background: rgba(251, 247, 238, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(67,96,60,.08); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(0,0,0,.07); }
+.site-header::before { content: ""; display: block; height: 6px; background: var(--rainbow); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--green-dark); }
-.brand-logo { height: 56px; width: auto; display: block; }
+.brand-logo { height: 62px; width: auto; display: block; }
 .brand-mark { font-size: 1.7rem; color: var(--accent); }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; }
@@ -81,15 +91,18 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .split-media img, .map { border-radius: var(--radius-lg); box-shadow: var(--shadow); width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 .map { border: 0; }
 
-/* Page hero (inner pages) */
-.page-hero { background: var(--green); color: #fff; padding: 64px 0 56px; }
+/* Page hero (inner pages) — color set per page via --hero-color */
+.page-hero { background: var(--hero-color, var(--blue)); color: #fff; padding: 64px 0 56px; }
 .page-hero h1 { color: #fff; }
-.page-hero .lead { color: rgba(255,255,255,.9); }
+.page-hero .lead { color: rgba(255,255,255,.92); }
 
 /* Cards */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.card { background: #fff; border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow); border-top: 5px solid var(--accent); }
-.card h3 { color: var(--green-dark); }
+.card { background: #fff; border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow); border-top: 6px solid var(--accent); }
+.card:nth-child(1) { border-top-color: var(--red); }
+.card:nth-child(2) { border-top-color: var(--green); }
+.card:nth-child(3) { border-top-color: var(--blue); }
+.card h3 { color: var(--ink); }
 .card p { margin: 0; color: var(--muted); }
 
 /* Staff */
@@ -103,6 +116,12 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
 .check-list li { position: relative; padding-left: 38px; }
 .check-list li::before { content: "✿"; position: absolute; left: 0; top: -2px; color: var(--accent); font-size: 1.3rem; }
+.check-list li:nth-child(6n+1)::before { color: var(--red); }
+.check-list li:nth-child(6n+2)::before { color: var(--orange); }
+.check-list li:nth-child(6n+3)::before { color: var(--yellow); }
+.check-list li:nth-child(6n+4)::before { color: var(--green); }
+.check-list li:nth-child(6n+5)::before { color: var(--blue); }
+.check-list li:nth-child(6n+6)::before { color: var(--purple); }
 
 /* Schedule */
 .schedule { display: grid; gap: 4px; }
@@ -130,7 +149,8 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .cta-band p { color: rgba(255,255,255,.85); margin-bottom: 1.6em; }
 
 /* Footer */
-.site-footer { background: #2f3329; color: #e8e6dd; padding: 56px 0 28px; margin-top: 20px; }
+.site-footer { position: relative; background: #262a24; color: #e8e6dd; padding: 56px 0 28px; margin-top: 20px; }
+.site-footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--rainbow); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; }
 .site-footer h3, .site-footer h4 { color: #fff; }
 .footer-brand { font-size: 1.3rem; margin-bottom: .5em; }
