@@ -185,6 +185,7 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .loader-dots span:nth-child(1) { background: var(--red); animation-delay: -0.32s; }
 .loader-dots span:nth-child(2) { background: var(--green); animation-delay: -0.16s; }
 .loader-dots span:nth-child(3) { background: var(--blue); }
+.loader-message { margin: 22px 0 0; color: var(--muted); font-family: var(--font-body); font-size: 1rem; }
 @keyframes loaderPulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.06); opacity: .85; } }
 @keyframes loaderBounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .loader-logo, .loader-dots span { animation: none; } }

@@ -145,6 +145,16 @@ collections:
           - { label: "Rainbow — Purple", name: purple, widget: color }
           - { label: "Heading font", name: headingFont, widget: select, options: ["Fredoka", "Baloo 2", "Quicksand", "Poppins", "Nunito", "Comfortaa"], default: "Fredoka" }
           - { label: "Body font", name: bodyFont, widget: select, options: ["Nunito Sans", "Nunito", "Open Sans", "Lato", "Poppins", "Mulish"], default: "Nunito Sans" }
+      - name: screens
+        label: "Loading & Error Screens"
+        file: "src/_data/screens.json"
+        description: "The loading screen shown while pages open, and the friendly 'page not found' screen. (The logo on both comes from Site Settings → Logo.)"
+        fields:
+          - { label: "Loading screen message (optional)", name: loaderMessage, widget: string, required: false, hint: "Leave blank to show just the logo and dots." }
+          - { label: "'Page not found' heading", name: notFoundHeading, widget: string }
+          - { label: "'Page not found' message", name: notFoundMessage, widget: text }
+          - { label: "'Page not found' button text", name: notFoundButton, widget: string }
+          - { label: "'Page not found' button link", name: notFoundButtonUrl, widget: string, default: "/" }
 
   - name: newpages
     label: "Add / Edit Pages"

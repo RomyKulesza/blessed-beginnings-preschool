@@ -106,6 +106,17 @@ Want a different look? You can change that too — no developer needed.
 
 > 💡 The colors are set to match your rainbow logo. If you experiment and want to get back, the original values are: Main color `#3aa935`, Text `#262626`, Background `#fbf8f2`, and rainbow Red `#e30613`, Orange `#ec6608`, Yellow `#ffc700`, Green `#3aa935`, Blue `#0072bc`, Purple `#8f2d8f`.
 
+## 9. The loading screen & the "page not found" screen
+
+Even these are yours to edit — no code.
+
+- **Website Pages → Loading & Error Screens.**
+  - **Loading screen message** — optional words under the logo while a page opens (leave blank for just the logo + dots).
+  - **"Page not found" heading, message, and button** — the friendly screen someone sees if they follow a broken or old link.
+- The **logo** on both screens comes from **Site Settings → Logo**, so updating your logo updates them automatically.
+
+Click **Publish → Publish now** when done.
+
 ---
 
-*Everything on this website — words, photos, pages, menu, colors, and fonts — is yours to change right here. Nothing requires a developer.*
+*Everything on this website — words, photos, pages, menu, colors, fonts, and even the loading and error screens — is yours to change right here. Nothing requires a developer.*

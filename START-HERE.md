@@ -87,6 +87,12 @@ Get an embed link and paste it into a **Video** section:
 - **YouTube:** `https://www.youtube.com/embed/VIDEO-ID`
 - **Google Drive:** set the file to *"Anyone with the link,"* then use `https://drive.google.com/file/d/FILE-ID/preview`
 
+### Change colors or fonts
+Website Pages → **Design — Colors & Fonts** → adjust any color or pick a font → **Publish**. It updates across the whole site.
+
+### Edit the loading & "page not found" screens
+Website Pages → **Loading & Error Screens** → change the loading message or the friendly not-found text → **Publish**. *(The logo on both comes from Site Settings.)*
+
 > 📘 A friendlier, illustrated version of this is in **EDITOR-GUIDE.md**.
 
 ---

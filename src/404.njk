@@ -33,9 +33,9 @@ eleventyExcludeFromCollections: true
   <main class="notfound">
     <div class="notfound-inner">
       <a href="/"><img class="notfound-logo" src="{{ site.logo }}" alt="{{ site.name }}"></a>
-      <h1>We can't find that page right now</h1>
-      <p class="lead">The page you're looking for may have moved or is taking a little rest — everything's just fine. Let's get you back to where the fun is.</p>
-      <a class="btn btn-primary" href="/">Back to Home</a>
+      <h1>{{ screens.notFoundHeading }}</h1>
+      <p class="lead">{{ screens.notFoundMessage }}</p>
+      <a class="btn btn-primary" href="{{ screens.notFoundButtonUrl or '/' }}">{{ screens.notFoundButton }}</a>
     </div>
   </main>
 </body>
