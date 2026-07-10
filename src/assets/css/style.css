@@ -174,6 +174,28 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .banner h2 { color: #fff; margin-bottom: .3em; }
 .banner p { color: rgba(255,255,255,.9); margin-bottom: 1.4em; }
 
+/* Loading screen */
+#site-loader { position: fixed; inset: 0; z-index: 9999; background: #ffffff; display: flex; align-items: center; justify-content: center; transition: opacity .5s ease, visibility .5s ease; }
+#site-loader::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--rainbow); }
+#site-loader.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.loader-inner { text-align: center; }
+.loader-logo { height: 92px; width: auto; margin: 0 auto 24px; animation: loaderPulse 1.5s ease-in-out infinite; }
+.loader-dots { display: flex; gap: 12px; justify-content: center; }
+.loader-dots span { width: 14px; height: 14px; border-radius: 50%; animation: loaderBounce 1s infinite ease-in-out both; }
+.loader-dots span:nth-child(1) { background: var(--red); animation-delay: -0.32s; }
+.loader-dots span:nth-child(2) { background: var(--green); animation-delay: -0.16s; }
+.loader-dots span:nth-child(3) { background: var(--blue); }
+@keyframes loaderPulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.06); opacity: .85; } }
+@keyframes loaderBounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .loader-logo, .loader-dots span { animation: none; } }
+
+/* Friendly "page not found" page */
+.notfound { min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 60px 24px; background: linear-gradient(180deg, #fff 0%, var(--cream) 100%); }
+.notfound-inner { max-width: 620px; }
+.notfound-logo { height: 120px; width: auto; margin: 0 auto 28px; }
+.notfound h1 { margin-bottom: .3em; }
+.notfound .lead { margin: 0 auto 1.8em; }
+
 /* Responsive */
 @media (max-width: 820px) {
   .nav-toggle { display: flex; }

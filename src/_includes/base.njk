@@ -27,6 +27,12 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  <div id="site-loader" role="status" aria-label="Loading">
+    <div class="loader-inner">
+      <img class="loader-logo" src="{{ site.logo }}" alt="Blessed Beginnings Preschool">
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -86,6 +92,21 @@
     </div>
   </footer>
   <script>
+    (function () {
+      var loader = document.getElementById("site-loader");
+      if (loader) {
+        var start = Date.now();
+        var hide = function () {
+          var wait = Math.max(0, 600 - (Date.now() - start));
+          setTimeout(function () { loader.classList.add("is-hidden"); }, wait);
+        };
+        if (document.readyState === "complete") hide();
+        else window.addEventListener("load", hide);
+        // Safety: never let the loader linger, even if something is slow.
+        setTimeout(function () { loader.classList.add("is-hidden"); }, 4000);
+      }
+    })();
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", function (user) {
         if (!user) {

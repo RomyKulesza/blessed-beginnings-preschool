@@ -1,0 +1,42 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · {{ site.name }}</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family={{ theme.headingFont | replace(' ', '+') }}:wght@500;600;700&family={{ theme.bodyFont | replace(' ', '+') }}:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    :root {
+      --primary: {{ theme.primary }};
+      --ink: {{ theme.text }};
+      --cream: {{ theme.background }};
+      --red: {{ theme.red }};
+      --orange: {{ theme.orange }};
+      --yellow: {{ theme.yellow }};
+      --green: {{ theme.green }};
+      --blue: {{ theme.blue }};
+      --purple: {{ theme.purple }};
+      --font-head: "{{ theme.headingFont }}", system-ui, sans-serif;
+      --font-body: "{{ theme.bodyFont }}", system-ui, sans-serif;
+    }
+    .nf-bar { height: 6px; background: var(--rainbow); }
+  </style>
+</head>
+<body>
+  <div class="nf-bar"></div>
+  <main class="notfound">
+    <div class="notfound-inner">
+      <a href="/"><img class="notfound-logo" src="{{ site.logo }}" alt="{{ site.name }}"></a>
+      <h1>We can't find that page right now</h1>
+      <p class="lead">The page you're looking for may have moved or is taking a little rest — everything's just fine. Let's get you back to where the fun is.</p>
+      <a class="btn btn-primary" href="/">Back to Home</a>
+    </div>
+  </main>
+</body>
+</html>
