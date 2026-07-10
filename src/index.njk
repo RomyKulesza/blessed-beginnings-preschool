@@ -29,6 +29,20 @@ permalink: /
   </div>
 </section>
 
+{% if home.tourVideo %}
+<section class="section section-tour">
+  <div class="container">
+    <div class="tour-head">
+      <h2>{{ home.tourHeading }}</h2>
+      <p class="lead">{{ home.tourText }}</p>
+    </div>
+    <div class="tour-video">
+      <iframe src="{{ home.tourVideo }}" title="Virtual tour of Blessed Beginnings Preschool" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="section section-soft">
   <div class="container">
     <div class="cards">

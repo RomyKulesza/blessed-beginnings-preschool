@@ -58,6 +58,7 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(251, 247, 238, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(67,96,60,.08); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--green-dark); }
+.brand-logo { height: 56px; width: auto; display: block; }
 .brand-mark { font-size: 1.7rem; color: var(--accent); }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; }
@@ -114,6 +115,13 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 /* Contact */
 .contact-block { margin-bottom: 28px; }
 .contact-block h3 { color: var(--accent); }
+
+/* Virtual tour */
+.section-tour { background: linear-gradient(180deg, var(--cream) 0%, var(--cream-soft) 100%); }
+.tour-head { text-align: center; max-width: 720px; margin: 0 auto 32px; }
+.tour-head .lead { margin: 0 auto; }
+.tour-video { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: #000; }
+.tour-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* CTA band */
 .cta-band { background: var(--green-dark); }

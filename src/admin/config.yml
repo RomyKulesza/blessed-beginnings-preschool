@@ -27,6 +27,9 @@ collections:
           - { label: "Welcome heading", name: welcomeHeading, widget: string }
           - { label: "Welcome text", name: welcomeBody, widget: text, hint: "Leave a blank line between paragraphs." }
           - { label: "Welcome photo", name: welcomeImage, widget: image }
+          - { label: "Virtual tour heading", name: tourHeading, widget: string, required: false }
+          - { label: "Virtual tour text", name: tourText, widget: text, required: false }
+          - { label: "Virtual tour video embed URL", name: tourVideo, widget: string, required: false, hint: "Google Drive: use the /preview link. Leave blank to hide the tour section." }
           - label: "Highlight cards"
             name: highlights
             widget: list
@@ -112,6 +115,7 @@ collections:
         file: "src/_data/site.json"
         fields:
           - { label: "Preschool name", name: name, widget: string }
+          - { label: "Logo", name: logo, widget: image, required: false }
           - { label: "Tagline", name: tagline, widget: string }
           - { label: "Phone", name: phone, widget: string }
           - { label: "Email", name: email, widget: string, required: false }
