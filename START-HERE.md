@@ -1,6 +1,10 @@
 # Blessed Beginnings Preschool Website — Start Here
 
-Everything you need to (A) put the site online, (B) edit it, and (C) understand how it works. **No coding required for day-to-day use.**
+Welcome! This is your new website, and this guide has **everything you need to run it yourself** — no web designer or developer required.
+
+It has three parts: **(A)** putting the site online, **(B)** editing it, and **(C)** things to know. Follow Part A once to get online; after that you'll live in Part B. Take it one numbered step at a time — you've got this. 🌈
+
+> **Tip:** Do Part A on a computer (not a phone), and give yourself about 20–30 minutes for the one-time setup.
 
 ---
 
@@ -16,10 +20,15 @@ Both are free for a site this size.
 1. Go to **github.com** → **Sign up**. Use the preschool's email.
 2. Verify the email and finish signup.
 
-### Step 2 — Put the website's code on GitHub
-The website's files are on the office computer in the folder `blessed-beginnings-preschool`.
-- The person setting this up authorizes GitHub once (a secure browser login — no password is shared), then the files are uploaded to a new GitHub **repository** (a project folder in the cloud) named e.g. `blessed-beginnings-preschool`.
-- *(If a developer is helping, this is a 2-minute step for them.)*
+### Step 2 — Create a repository and upload the website files (drag & drop, no coding)
+1. **Unzip** the website files you were sent (you'll get a folder called `blessed-beginnings-preschool`).
+2. On GitHub, click the **+** in the top-right corner → **New repository.**
+3. Name it `blessed-beginnings-preschool`, leave it set to **Public**, and click **Create repository.**
+4. On the next screen, click the blue link that says **"uploading an existing file."**
+5. Open the unzipped folder on your computer, **select everything inside it** (all the files and folders — use Ctrl+A / Cmd+A), and **drag them into the upload box** in your browser.
+6. When the files finish uploading, scroll down and click the green **Commit changes** button.
+
+Your website's files are now on GitHub. ✅ *(No command line, no coding — just dragging files.)*
 
 ### Step 3 — Create a free Netlify account and connect the site
 1. Go to **netlify.com** → **Sign up** → choose **"Sign up with GitHub"** (easiest).
