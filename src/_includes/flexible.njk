@@ -1,0 +1,81 @@
+---
+layout: base.njk
+---
+{% macro renderBlock(b) %}
+  {% if b.type == "heading" %}
+  <div class="container"><h2 class="block-heading" style="text-align: {{ b.align or 'left' }}">{{ b.text }}</h2></div>
+
+  {% elif b.type == "text" %}
+  <div class="container"><div class="prose">{{ b.body | md | safe }}</div></div>
+
+  {% elif b.type == "image" %}
+  <div class="container">
+    <figure class="block-image{% if b.width == 'full' %} block-image-full{% endif %}">
+      <img src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy">
+      {% if b.caption %}<figcaption>{{ b.caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+
+  {% elif b.type == "imageText" %}
+  <div class="container split{% if b.imageSide == 'right' %} split-rev{% endif %}">
+    <div class="split-media"><img src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy"></div>
+    <div class="split-copy">
+      {% if b.heading %}<h2>{{ b.heading }}</h2>{% endif %}
+      {{ b.body | md | safe }}
+    </div>
+  </div>
+
+  {% elif b.type == "gallery" %}
+  <div class="container">
+    {% if b.heading %}<h2 class="block-heading" style="text-align:center">{{ b.heading }}</h2>{% endif %}
+    <div class="gallery">
+      {% for g in b.images %}<figure class="gallery-item"><img src="{{ g.image }}" alt="{{ g.alt }}" loading="lazy">{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>{% endfor %}
+    </div>
+  </div>
+
+  {% elif b.type == "cards" %}
+  <div class="container">
+    {% if b.heading %}<h2 class="block-heading" style="text-align:center">{{ b.heading }}</h2>{% endif %}
+    <div class="cards{% if b.columns == '2' %} cards-2{% endif %}">
+      {% for c in b.items %}<div class="card"><h3>{{ c.title }}</h3><p>{{ c.text }}</p></div>{% endfor %}
+    </div>
+  </div>
+
+  {% elif b.type == "video" %}
+  <div class="container">
+    <div class="tour-head">
+      {% if b.heading %}<h2>{{ b.heading }}</h2>{% endif %}
+      {% if b.text %}<p class="lead">{{ b.text }}</p>{% endif %}
+    </div>
+    <div class="tour-video"><iframe src="{{ b.embedUrl }}" title="{{ b.heading or 'Video' }}" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+
+  {% elif b.type == "buttons" %}
+  <div class="container"><div class="btn-row" style="justify-content: {{ b.align or 'flex-start' }}">
+    {% for btn in b.items %}<a class="btn {% if btn.style == 'light' %}btn-light{% else %}btn-primary{% endif %}" href="{{ btn.url }}">{{ btn.label }}</a>{% endfor %}
+  </div></div>
+
+  {% elif b.type == "banner" %}
+  <div class="container"><div class="banner" style="--banner-color: var(--{{ b.color or 'green' }})">
+    <h2>{{ b.heading }}</h2>
+    {% if b.text %}<p>{{ b.text }}</p>{% endif %}
+    {% if b.buttonLabel %}<a class="btn btn-light" href="{{ b.buttonUrl or '#' }}">{{ b.buttonLabel }}</a>{% endif %}
+  </div></div>
+  {% endif %}
+{% endmacro %}
+
+<section class="page-hero" style="--hero-color: var(--{{ heroColor or 'blue' }})">
+  <div class="container">
+    <h1>{{ title }}</h1>
+    {% if subtitle %}<p class="lead">{{ subtitle }}</p>{% endif %}
+  </div>
+</section>
+
+<div class="flex-page">
+  {% if content %}<section class="section"><div class="container prose">{{ content | safe }}</div></section>{% endif %}
+  {% for b in blocks %}
+  <section class="section{% if loop.index0 % 2 %} section-soft{% endif %}">
+    {{ renderBlock(b) }}
+  </section>
+  {% endfor %}
+</div>

@@ -34,6 +34,9 @@
           {% for item in site.nav %}
           <li><a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
           {% endfor %}
+          {% for p in collections.navPages %}
+          <li><a href="{{ p.url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.data.navLabel or p.data.title }}</a></li>
+          {% endfor %}
         </ul>
       </nav>
     </div>

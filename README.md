@@ -12,6 +12,8 @@ A fast, mobile-friendly website built from the school's content, with a **no-cod
 
 That's it — no code, no software to install.
 
+**You can also add brand-new pages** (with photo galleries, videos, cards, and more) and they appear in the menu automatically — see the full walkthrough in **[EDITOR-GUIDE.md](EDITOR-GUIDE.md)**, written for non-technical editors.
+
 ## 🗂️ What's here
 
 - `src/_data/*.json` — all the page content (edited through the admin panel)

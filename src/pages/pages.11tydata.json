@@ -1,0 +1,5 @@
+{
+  "layout": "flexible.njk",
+  "permalink": "/{{ page.fileSlug }}/",
+  "heroColor": "blue"
+}

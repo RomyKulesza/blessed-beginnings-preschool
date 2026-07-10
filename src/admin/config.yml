@@ -129,3 +129,111 @@ collections:
             fields:
               - { label: Label, name: label, widget: string }
               - { label: Link, name: url, widget: string }
+
+  - name: newpages
+    label: "Add / Edit Pages"
+    label_singular: "Page"
+    description: "Create brand-new pages and build them from sections. Turn on 'Show in menu' and it appears in the top navigation automatically."
+    folder: "src/pages"
+    create: true
+    delete: true
+    extension: "md"
+    format: "yaml-frontmatter"
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: "Page title", name: title, widget: string }
+      - { label: "Subtitle (optional)", name: subtitle, widget: string, required: false }
+      - label: "Header color"
+        name: heroColor
+        widget: select
+        default: blue
+        options: ["red", "orange", "yellow", "green", "blue", "purple"]
+      - { label: "Show in top menu?", name: showInNav, widget: boolean, default: true }
+      - { label: "Menu label (optional)", name: navLabel, widget: string, required: false, hint: "Defaults to the page title." }
+      - { label: "Menu order (lower shows first)", name: navOrder, widget: number, required: false, default: 10 }
+      - label: "Sections (add, remove, or drag to reorder)"
+        name: blocks
+        label_singular: "Section"
+        widget: list
+        types:
+          - label: "Heading"
+            name: heading
+            widget: object
+            fields:
+              - { label: Text, name: text, widget: string }
+              - { label: Align, name: align, widget: select, options: ["left", "center"], default: "left" }
+          - label: "Text"
+            name: text
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: markdown }
+          - label: "Image"
+            name: image
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: "Describe the image (for accessibility)", name: alt, widget: string, required: false }
+              - { label: Caption, name: caption, widget: string, required: false }
+              - { label: Width, name: width, widget: select, options: ["normal", "full"], default: "normal" }
+          - label: "Image + Text (side by side)"
+            name: imageText
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: "Describe the image", name: alt, widget: string, required: false }
+              - { label: "Image on which side?", name: imageSide, widget: select, options: ["left", "right"], default: "left" }
+              - { label: Heading, name: heading, widget: string, required: false }
+              - { label: Body, name: body, widget: markdown }
+          - label: "Photo Gallery"
+            name: gallery
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - label: Photos
+                name: images
+                widget: list
+                fields:
+                  - { label: Image, name: image, widget: image }
+                  - { label: "Describe the image", name: alt, widget: string, required: false }
+                  - { label: Caption, name: caption, widget: string, required: false }
+          - label: "Info Cards"
+            name: cards
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - { label: Columns, name: columns, widget: select, options: ["2", "3"], default: "3" }
+              - label: Cards
+                name: items
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: "Video"
+            name: video
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, required: false }
+              - { label: Text, name: text, widget: text, required: false }
+              - { label: "Video link (Google Drive /preview or YouTube embed)", name: embedUrl, widget: string }
+          - label: "Buttons"
+            name: buttons
+            widget: object
+            fields:
+              - { label: Align, name: align, widget: select, options: ["flex-start", "center", "flex-end"], default: "flex-start" }
+              - label: Buttons
+                name: items
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Link, name: url, widget: string }
+                  - { label: Style, name: style, widget: select, options: ["primary", "light"], default: "primary" }
+          - label: "Color Banner (call to action)"
+            name: banner
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Text, name: text, widget: text, required: false }
+              - { label: Color, name: color, widget: select, options: ["red", "orange", "yellow", "green", "blue", "purple"], default: "green" }
+              - { label: "Button label", name: buttonLabel, widget: string, required: false }
+              - { label: "Button link", name: buttonUrl, widget: string, required: false }
