@@ -9,6 +9,12 @@ blocks:
   - type: text
     body: |
       Blessed Beginnings is a non-profit preschool, and the generosity of our families and community helps us give every child a wonderful start. Here are a few ways you can help.
+  - type: banner
+    color: green
+    heading: Make a Donation
+    text: Give securely online through Christ The King Lutheran Church. Every gift supports our preschool and the children we serve.
+    buttonLabel: Donate Now
+    buttonUrl: https://secure.myvanco.com/YJB5/home
   - type: text
     body: |
       ## GRACE Scholarship Fund
