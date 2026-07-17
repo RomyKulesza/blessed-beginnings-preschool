@@ -18,7 +18,7 @@ permalink: /contact/
         <p>{{ contact.location }}<br>{{ contact.addressLine1 }}<br>{{ contact.addressLine2 }}</p>
       </div>
       <div class="contact-block">
-        <h3>Call Us</h3>
+        <h3>Call or Email Us</h3>
         <p><a href="tel:{{ contact.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ contact.phone }}</a></p>
         {% if contact.email %}<p><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>{% endif %}
       </div>
