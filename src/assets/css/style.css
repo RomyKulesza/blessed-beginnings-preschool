@@ -131,6 +131,14 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .schedule-detail h3 { margin-bottom: .2em; }
 .schedule-detail p { margin: 0; color: var(--muted); }
 
+/* Tuition table */
+.tuition-table { display: grid; gap: 14px; max-width: 720px; }
+.tuition-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #fff; border-radius: var(--radius); padding: 22px 26px; box-shadow: var(--shadow); border-left: 6px solid var(--accent); }
+.tuition-program { font-family: var(--font-head); font-weight: 600; font-size: 1.15rem; color: var(--ink); }
+.tuition-price { text-align: right; }
+.tuition-price strong { display: block; color: var(--primary-dark); font-size: 1.1rem; }
+.tuition-price span { color: var(--muted); font-size: .95rem; }
+
 /* Contact */
 .contact-block { margin-bottom: 28px; }
 .contact-block h3 { color: var(--accent); }
@@ -141,6 +149,17 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .tour-head .lead { margin: 0 auto; }
 .tour-video { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: #000; }
 .tour-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Testimonials */
+.testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.testimonial { margin: 0; background: #fff; border-radius: var(--radius); padding: 30px 28px; box-shadow: var(--shadow); border-top: 6px solid var(--accent); }
+.testimonial:nth-child(1) { border-top-color: var(--red); }
+.testimonial:nth-child(2) { border-top-color: var(--blue); }
+.testimonial:nth-child(3) { border-top-color: var(--green); }
+.testimonial:nth-child(4) { border-top-color: var(--purple); }
+.testimonial blockquote { margin: 0 0 .8em; font-size: 1.08rem; line-height: 1.6; color: var(--ink); }
+.testimonial blockquote::before { content: "\201C"; color: var(--accent); font-family: Georgia, serif; font-size: 1.4em; line-height: 0; vertical-align: -0.35em; margin-right: 2px; }
+.testimonial figcaption { font-family: var(--font-head); font-weight: 600; color: var(--primary-dark); }
 
 /* CTA band */
 .cta-band { background: var(--primary-dark); }
@@ -157,6 +176,8 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
 .site-footer a { color: var(--accent-soft); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
 .footer-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.footer-social { display: flex; gap: 18px; margin-top: 14px; }
+.footer-social a { font-family: var(--font-head); font-weight: 600; }
 .footer-bottom { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: .85rem; color: #b9b7ac; }
 
 /* Flexible page builder blocks */
@@ -209,7 +230,10 @@ h3 { font-size: 1.3rem; margin: 0 0 .3em; }
   .hero-media { order: -1; }
   .split-rev .split-media { order: 0; }
   .cards, .cards-2 { grid-template-columns: 1fr; }
+  .testimonials { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr 1fr; }
+  .tuition-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .tuition-price { text-align: left; }
   .staff-card { grid-template-columns: 1fr; }
   .staff-photo img { max-width: 220px; }
   .schedule-row { grid-template-columns: 1fr; gap: 6px; }

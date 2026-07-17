@@ -3,17 +3,20 @@
   "logo": "/assets/images/logo.jpg",
   "tagline": "Early education in Holliston, Massachusetts",
   "phone": "(508) 429-5717",
-  "email": "",
+  "email": "bbpholliston@gmail.com",
   "addressLine1": "600 Central Street",
   "addressLine2": "Holliston, MA 01746",
   "location": "at Christ The King Lutheran Church",
-  "accreditation": "Licensed by the MA Department of Early Education and Care · NAEYC Accredited",
+  "accreditation": "Voted #1 Preschool in Holliston · Licensed by the MA Department of Early Education and Care · NAEYC Accredited",
+  "instagram": "https://www.instagram.com/blessedbeginningsps",
+  "facebook": "https://www.facebook.com/blessedbeginningspreschool",
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "Our Mission", "url": "/mission/" },
     { "label": "Our Staff", "url": "/staff/" },
     { "label": "Our Program", "url": "/program/" },
     { "label": "Our Day", "url": "/our-day/" },
+    { "label": "Enrollment", "url": "/enrollment/" },
     { "label": "Contact", "url": "/contact/" }
   ]
 }

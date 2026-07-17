@@ -1,0 +1,64 @@
+---
+layout: base.njk
+title: Enrollment
+permalink: /enrollment/
+---
+<section class="page-hero" style="--hero-color: var(--orange)">
+  <div class="container">
+    <h1>{{ enrollment.heading }}</h1>
+    <p class="lead">{{ enrollment.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    {% for p in enrollment.aboutBody.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container prose">
+    <h2>{{ enrollment.priorityHeading }}</h2>
+    <p>{{ enrollment.priorityBody }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>{{ enrollment.tuitionHeading }}</h2>
+    <div class="tuition-table">
+      {% for row in enrollment.tuition %}
+      <div class="tuition-row">
+        <div class="tuition-program">{{ row.program }}</div>
+        <div class="tuition-price"><strong>{{ row.year }}</strong><span>{{ row.monthly }}</span></div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="note">{{ enrollment.tuitionNote }}</p>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container prose">
+    <h2>{{ enrollment.registerHeading }}</h2>
+    <p>{{ enrollment.registerBody }}</p>
+    {% if enrollment.registerFormUrl %}
+    <p><a class="btn btn-primary" href="{{ enrollment.registerFormUrl }}" target="_blank" rel="noopener">{{ enrollment.registerFormLabel }}</a></p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <h2>{{ enrollment.graceHeading }}</h2>
+    {% for p in enrollment.graceBody.split("\n\n") %}<p>{{ p }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-inner">
+    <h2>Ready to visit?</h2>
+    <p>Call {{ site.phone }} or email us to schedule a tour.</p>
+    <a class="btn btn-light" href="/contact/">Schedule a Tour</a>
+  </div>
+</section>

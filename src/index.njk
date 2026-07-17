@@ -56,6 +56,22 @@ permalink: /
   </div>
 </section>
 
+{% if home.testimonials %}
+<section class="section">
+  <div class="container">
+    <h2 class="block-heading" style="text-align:center">{{ home.testimonialsHeading }}</h2>
+    <div class="testimonials">
+      {% for t in home.testimonials %}
+      <figure class="testimonial">
+        <blockquote>{{ t.quote }}</blockquote>
+        <figcaption>— {{ t.name }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="section cta-band">
   <div class="container cta-inner">
     <h2>Come see us in person</h2>

@@ -2,7 +2,7 @@
 title: Our Classroom
 subtitle: Take a look inside the spaces where your child will learn and play.
 heroColor: green
-showInNav: true
+showInNav: false
 navLabel: Our Classroom
 navOrder: 5
 blocks:

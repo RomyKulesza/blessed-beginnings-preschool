@@ -14,5 +14,12 @@
     { "title": "Play-Based Learning", "text": "A curriculum that grows creativity, self-esteem, and independence through meaningful, hands-on play." },
     { "title": "Small Class Sizes", "text": "A low teacher-to-child ratio so every child receives the individual attention they deserve." },
     { "title": "NAEYC Accredited", "text": "We meet the highest national standards for quality early childhood education." }
+  ],
+  "testimonialsHeading": "What Parents Are Saying",
+  "testimonials": [
+    { "quote": "I'm new to the area and every parent I met had glowing reviews about Blessed Beginnings. The teachers are very warm and welcoming. You can tell that they genuinely love what they do!", "name": "Mary G." },
+    { "quote": "Our girls have been in four preschools across different states, due to our family moving. Our time at Blessed Beginnings was far superior to any of these programs.", "name": "Megan D." },
+    { "quote": "We have had the best experience I could have imagined and are so excited to continue the journey with our son.", "name": "Andrea C." },
+    { "quote": "The teachers go above and beyond every single day for their students. They have created a perfect environment for my son to learn and grow.", "name": "Courtney P." }
   ]
 }

@@ -36,6 +36,13 @@ collections:
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Text, name: text, widget: text }
+          - { label: "Testimonials heading", name: testimonialsHeading, widget: string, required: false }
+          - label: "Testimonials (parent quotes)"
+            name: testimonials
+            widget: list
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Name, name: name, widget: string }
       - name: mission
         label: "Our Mission Page"
         file: "src/_data/mission.json"
@@ -53,6 +60,7 @@ collections:
           - { label: "Administration text", name: adminBody, widget: text }
           - { label: "Teachers heading", name: staffHeading, widget: string }
           - { label: "Teachers text", name: staffBody, widget: text }
+          - { label: "Staff group photo", name: groupPhoto, widget: image, required: false }
           - label: "Staff members"
             name: team
             widget: list
@@ -110,6 +118,30 @@ collections:
           - { label: "Map embed URL", name: mapEmbed, widget: string, required: false }
           - { label: "Enrollment heading", name: enrollmentHeading, widget: string }
           - { label: "Enrollment text", name: enrollmentBody, widget: text, hint: "Leave a blank line between paragraphs." }
+      - name: enrollment
+        label: "Enrollment Page"
+        file: "src/_data/enrollment.json"
+        fields:
+          - { label: "Page heading", name: heading, widget: string }
+          - { label: "Intro", name: intro, widget: text }
+          - { label: "About the program", name: aboutBody, widget: text, hint: "Leave a blank line between paragraphs." }
+          - { label: "Priority enrollment heading", name: priorityHeading, widget: string }
+          - { label: "Priority enrollment text", name: priorityBody, widget: text }
+          - { label: "Tuition heading", name: tuitionHeading, widget: string }
+          - { label: "Tuition note", name: tuitionNote, widget: text }
+          - label: "Tuition rows"
+            name: tuition
+            widget: list
+            fields:
+              - { label: Program, name: program, widget: string }
+              - { label: "Yearly price", name: year, widget: string }
+              - { label: "Monthly option", name: monthly, widget: string }
+          - { label: "How to register heading", name: registerHeading, widget: string }
+          - { label: "How to register text", name: registerBody, widget: text }
+          - { label: "Registration form (PDF)", name: registerFormUrl, widget: file, required: false }
+          - { label: "Registration form button label", name: registerFormLabel, widget: string, required: false }
+          - { label: "GRACE scholarship heading", name: graceHeading, widget: string }
+          - { label: "GRACE scholarship text", name: graceBody, widget: text, hint: "Leave a blank line between paragraphs." }
       - name: site
         label: "Site Settings (name, phone, menu)"
         file: "src/_data/site.json"
@@ -119,6 +151,8 @@ collections:
           - { label: "Tagline", name: tagline, widget: string }
           - { label: "Phone", name: phone, widget: string }
           - { label: "Email", name: email, widget: string, required: false }
+          - { label: "Instagram URL", name: instagram, widget: string, required: false }
+          - { label: "Facebook URL", name: facebook, widget: string, required: false }
           - { label: "Address line 1", name: addressLine1, widget: string }
           - { label: "Address line 2", name: addressLine2, widget: string }
           - { label: "Location note", name: location, widget: string }
