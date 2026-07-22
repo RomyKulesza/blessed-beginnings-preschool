@@ -1,25 +1,46 @@
 {
-  "heroTitle": "Welcome to Blessed Beginnings Preschool",
-  "heroSubtitle": "A world of wonder, creativity, and gentle growth awaits your child in Holliston, Massachusetts.",
-  "heroImage": "/assets/images/children-letters.jpg",
-  "ctaLabel": "Schedule a Tour",
-  "ctaUrl": "/contact/",
   "welcomeHeading": "A Nurturing Place to Grow",
-  "welcomeBody": "Welcome to Blessed Beginnings Preschool, located at Christ The King Church in Holliston, Massachusetts! We are an early education preschool for children between 2 years 9 months through 6 years old, serving Holliston and the surrounding communities of Ashland, Milford, Medway, Hopkinton and beyond. Our comprehensive program emphasizes our deep commitment to children's success and sense of well-being.\n\nOur program is licensed by the MA Department of Early Education and Care, and we also meet the high standards of the National Association for the Education of Young Children (NAEYC). Please browse our site to learn more about how our program meets the needs and enriches the lives of young children and their families.",
-  "welcomeImage": "/assets/images/classroom.jpg",
-  "tourHeading": "Take a Virtual Tour",
-  "tourText": "Step inside Blessed Beginnings and see where your child's day unfolds — our bright classroom, cozy corners, and the spaces where curiosity comes to life.",
+  "heroImage": "/assets/images/web-4-.jpg",
   "tourVideo": "https://drive.google.com/file/d/1XBkYapT_4LqYyc8iPEznnAd28YHH9nZe/preview",
-  "highlights": [
-    { "title": "Play-Based Learning", "text": "A curriculum that grows creativity, self-esteem, and independence through meaningful, hands-on play." },
-    { "title": "Small Class Sizes", "text": "A low teacher-to-child ratio so every child receives the individual attention they deserve." },
-    { "title": "NAEYC Accredited", "text": "We meet the highest national standards for quality early childhood education." }
-  ],
+  "welcomeBody": "Welcome to Blessed Beginnings Preschool, located at Christ The King Church in Holliston, Massachusetts! We are an early education preschool for children between 2 years 9 months through 6 years old, serving Holliston and the surrounding communities of Ashland, Milford, Medway, Hopkinton and beyond. Our comprehensive program emphasizes our deep commitment to children's success and sense of well-being.\n\nOur program is licensed by the MA Department of Early Education and Care, and we also meet the high standards of the National Association for the Education of Young Children (NAEYC). Please browse our site to learn more about how our program meets the needs and enriches the lives of young children and their families.",
+  "ctaLabel": "Schedule a Tour",
+  "tourText": "Step inside Blessed Beginnings and see where your child's day unfolds — our bright classroom, cozy corners, and the spaces where curiosity comes to life.",
+  "tourHeading": "Take a Virtual Tour",
   "testimonialsHeading": "What Parents Are Saying",
+  "heroSubtitle": "A world of wonder, creativity, and gentle growth awaits your child in Holliston, Massachusetts.",
   "testimonials": [
-    { "quote": "I'm new to the area and every parent I met had glowing reviews about Blessed Beginnings. The teachers are very warm and welcoming. You can tell that they genuinely love what they do!", "name": "Mary G." },
-    { "quote": "Our girls have been in four preschools across different states, due to our family moving. Our time at Blessed Beginnings was far superior to any of these programs.", "name": "Megan D." },
-    { "quote": "We have had the best experience I could have imagined and are so excited to continue the journey with our son.", "name": "Andrea C." },
-    { "quote": "The teachers go above and beyond every single day for their students. They have created a perfect environment for my son to learn and grow.", "name": "Courtney P." }
+    {
+      "quote": "I'm new to the area and every parent I met had glowing reviews about Blessed Beginnings. The teachers are very warm and welcoming. You can tell that they genuinely love what they do!",
+      "name": "Mary G."
+    },
+    {
+      "quote": "Our girls have been in four preschools across different states, due to our family moving. Our time at Blessed Beginnings was far superior to any of these programs.",
+      "name": "Megan D."
+    },
+    {
+      "quote": "We have had the best experience I could have imagined and are so excited to continue the journey with our son.",
+      "name": "Andrea C."
+    },
+    {
+      "quote": "The teachers go above and beyond every single day for their students. They have created a perfect environment for my son to learn and grow.",
+      "name": "Courtney P."
+    }
+  ],
+  "welcomeImage": "/assets/images/classroom.jpg",
+  "heroTitle": "Welcome to Blessed Beginnings Preschool",
+  "ctaUrl": "/contact/",
+  "highlights": [
+    {
+      "title": "Play-Based Learning",
+      "text": "A curriculum that grows creativity, self-esteem, and independence through meaningful, hands-on play."
+    },
+    {
+      "title": "Small Class Sizes",
+      "text": "A low teacher-to-child ratio so every child receives the individual attention they deserve."
+    },
+    {
+      "title": "NAEYC Accredited",
+      "text": "We meet the highest national standards for quality early childhood education."
+    }
   ]
 }
