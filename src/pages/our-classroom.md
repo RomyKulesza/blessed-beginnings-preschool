@@ -24,7 +24,7 @@ blocks:
         alt: Our gathering rug by the windows
       - image: /assets/images/chalk.jpg
         alt: The play area
-      - image: /assets/images/classroom-rocking-chair.jpg
+      - image: /assets/images/web-18-.jpg
         alt: A cozy reading corner
   - type: banner
     color: green
