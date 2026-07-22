@@ -18,7 +18,7 @@ blocks:
     images:
       - image: /assets/images/web-9-.jpg
         alt: Our bright, welcoming classroom
-      - image: /assets/images/classroom-aquarium.jpg
+      - image: /assets/images/train.jpg
         alt: The aquarium corner
       - image: /assets/images/classroom-meeting-rug.jpg
         alt: Our gathering rug by the windows
