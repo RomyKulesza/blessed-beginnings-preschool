@@ -26,6 +26,7 @@ blocks:
         alt: The play area
       - image: /assets/images/web-18-.jpg
         alt: A cozy reading corner
+      - image: /assets/images/web-2-.jpg
   - type: banner
     color: green
     heading: Come see it in person
