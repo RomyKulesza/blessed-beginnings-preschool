@@ -1,12 +1,12 @@
 {
   "heading": "Contact Us",
-  "intro": "We would love to hear from you and to welcome your family to Blessed Beginnings. Call the preschool office or send us a message to schedule a tour or ask any questions.",
-  "phone": "(508) 429-5717",
-  "email": "bbpholliston@gmail.com",
+  "enrollmentBody": "Priority enrollment for our current families begins January 2nd, and registration opens to the public on February 1st. All open spots are filled on a first come, first served basis.\n\nYou'll find tuition rates, the registration form, and GRACE scholarship details on our Enrollment page — or just call the office at (508) 429-5717 and we'll be glad to help.",
   "addressLine1": "600 Central Street",
   "addressLine2": "Holliston, MA 01746",
-  "location": "at Christ The King Lutheran Church",
+  "intro": "We would love to hear from you and to welcome your family to Blessed Beginnings. Call the preschool office or send us a message to schedule a tour or ask any questions.",
+  "phone": "(508) 429-5717",
+  "location": "located in Christ The King Lutheran Church",
+  "email": "bbpholliston@gmail.com",
   "mapEmbed": "https://www.google.com/maps?q=600+Central+Street+Holliston+MA+01746&output=embed",
-  "enrollmentHeading": "Enrollment & Registration",
-  "enrollmentBody": "Priority enrollment for our current families begins January 2nd, and registration opens to the public on February 1st. All open spots are filled on a first come, first served basis.\n\nYou'll find tuition rates, the registration form, and GRACE scholarship details on our Enrollment page — or just call the office at (508) 429-5717 and we'll be glad to help."
+  "enrollmentHeading": "Enrollment & Registration"
 }
