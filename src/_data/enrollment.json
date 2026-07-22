@@ -1,20 +1,32 @@
 {
   "heading": "Enrollment & Registration",
-  "intro": "Thank you for allowing us to introduce our preschool to you! We are a traditional preschool where children learn through play, learning centers, hands-on activities, and interacting with their peers — always keeping the developmental level of each child in mind.",
-  "aboutBody": "Our program is located at Christ the King Lutheran Church at 600 Central Street in Holliston, MA. With low teacher-to-child ratios, we meet each child's individual needs while preparing them for the next step of kindergarten.\n\nOur school year starts in early September — the Monday after Labor Day — and ends by the second week of June. We follow the Holliston Public School calendar for most holidays, vacations, and snow days. Class time is 9:00 am–12:00 pm. We offer 2, 3, and 5 day schedules for children between the ages of 2.9 and 5 years. Families may also extend their child's day with our \"Lunch and Learn\" program (12:00–1:00 pm, extra charge), where children bring lunch from home and take part in a literacy activity.\n\nWe are licensed by the Massachusetts Department of Early Education and Care, and we have been voted the #1 Preschool in Holliston by Reader's Choice Magazine. We have a licensed capacity of 18 children and strive to maintain a low teacher/child ratio with a well-educated, experienced staff.",
-  "priorityHeading": "Priority Enrollment",
-  "priorityBody": "Priority enrollment for our current families begins on January 2nd. Registration opens to the public on February 1st. All open spots are filled on a first come, first served basis. Please call or email us for more information and to schedule a tour of our preschool — we look forward to hearing from you!",
+  "registerBody": "We invite parents interested in enrolling their children to visit us (with their child) while classes are in session to see the classroom and observe our activities and teacher/child interaction. We can arrange for you to speak with a parent of a currently enrolled child. When you're ready, complete the registration form and return it with the $100 registration fee plus 10% of your chosen program's yearly tuition. Registration is complete once the form and deposit are received (the deposit is non-refundable).",
   "tuitionHeading": "Tuition Rates (2026–2027)",
-  "tuitionNote": "A 10% sibling discount is applied to the lower rate. A $100 registration fee is due upon registration, followed by ten monthly payments from September through May.",
-  "tuition": [
-    { "program": "Tuesday / Thursday", "year": "$2,950 per school year", "monthly": "or 10 payments of $295" },
-    { "program": "Monday / Wednesday / Friday", "year": "$4,150 per school year", "monthly": "or 10 payments of $415" },
-    { "program": "Monday through Friday", "year": "$6,750 per school year", "monthly": "or 10 payments of $675" }
-  ],
-  "registerHeading": "How to Register",
-  "registerBody": "We invite parents interested in enrolling their children to visit us while classes are in session to see the classroom and observe our activities and teacher/child interaction. We can even arrange for you to speak with a parent of a currently enrolled child. When you're ready, complete the registration form and return it with the $100 registration fee plus 10% of your chosen program's yearly tuition. Registration is complete once the form and deposit are received (the deposit is non-refundable).",
+  "priorityBody": "Priority enrollment for our current families begins on January 2nd. Registration opens to the public on February 1st. All open spots are filled on a first come, first served basis. Please call or email us for more information and to schedule a tour of our preschool — we look forward to hearing from you!",
   "registerFormUrl": "/assets/docs/2026-27-registration-form.pdf",
-  "registerFormLabel": "Download the 2026–2027 Registration Form (PDF)",
   "graceHeading": "GRACE Scholarship — Financial Assistance",
-  "graceBody": "No child should be denied the opportunity to attend our preschool due to a family's financial hardship. The GRACE Scholarship Fund (Giving Real opportunities for All Children's Education), established by our Advisory Team and the Church Council of Christ the King Lutheran Church, offers reduced tuition to families in need.\n\nFamilies may submit an application for financial assistance. Completed applications go to the Director, or are mailed to the attention of the \"Scholarship Committee\" at 600 Central Street, Holliston, MA 01746. Applications are reviewed and assistance is given according to need and available funds. All information is kept confidential, and applicants are notified of the committee's decision in a timely manner. Please contact us to request an application."
+  "intro": "Thank you for allowing us to introduce our preschool to you! We are a traditional preschool where children learn through play, learning centers, hands-on activities, and interacting with their peers — always keeping the developmental level of each child in mind.",
+  "registerFormLabel": "Download the 2026–2027 Registration Form (PDF)",
+  "tuitionNote": "A deposit is due upon registration, (this includes a $100 registration fee and 10% of the yearly rate), followed by nine monthly payments from September through May.\nA 10% sibling discount is applied to the lower rate. ",
+  "aboutBody": "Our program is located at 600 Central Street in Holliston, MA. \n\nWith low teacher-to-child ratios, we meet each child's individual needs while preparing them for the next step of kindergarten.\n\nOur school year starts in early September — the Monday after Labor Day — and ends by the second week of June. We follow the Holliston Public School calendar for most holidays, vacations, and snow days. Class time is 9:00 am–12:00 pm. We offer 2, 3, and 5 day schedules for children between the ages of 2.9 and 5 years, while keeping in mind what is best for each child. Families may also extend their child's day with our \"Lunch and Learn\" program (12:00–1:00 pm, with an extra charge), where children bring lunch from home and take part in a literacy activity.\n\nWe are licensed by the Massachusetts Department of Early Education and Care, and have been voted the #1 Preschool in Holliston by Reader's Choice Magazine. We have a licensed capacity of 18 children and strive to maintain a low teacher/child ratio with a well-educated, experienced staff.",
+  "graceBody": "No child should be denied the opportunity to attend our preschool due to a family's financial hardship. The GRACE Scholarship Fund (Giving Real opportunities for All Children's Education), established by our advisory team and members of the church council, offers reduced tuition to families in need.\n\nFamilies may submit an application for financial assistance. Completed applications go to the Director, or are mailed to the attention of the \"Scholarship Committee\" at 600 Central Street, Holliston, MA 01746. Applications are reviewed and assistance is given according to need and available funds. All information is kept confidential, and applicants are notified of the committee's decision in a timely manner. Please contact us to request an application.",
+  "tuition": [
+    {
+      "program": "Tuesday / Thursday",
+      "year": "$2,950 per school year",
+      "monthly": "or 10 payments of $295"
+    },
+    {
+      "program": "Monday / Wednesday / Friday",
+      "year": "$4,150 per school year",
+      "monthly": "or 10 payments of $415"
+    },
+    {
+      "program": "Monday through Friday",
+      "year": "$6,750 per school year",
+      "monthly": "or 10 payments of $675"
+    }
+  ],
+  "priorityHeading": "Priority Enrollment",
+  "registerHeading": "How to Register"
 }
