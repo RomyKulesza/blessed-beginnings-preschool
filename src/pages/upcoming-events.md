@@ -1,10 +1,6 @@
 ---
 title: Upcoming Events
-subtitle: "Join us as we 'march' in the Celebrate Holliston
-  Parade                                                                                                                                      \
-  on Saturday, September 19,
-  2026                                                                                                                                            \
-  "
+subtitle: "March with us in the Celebrate Holliston Parade on Saturday, September 19th  "
 heroColor: blue
 showInNav: true
 navOrder: 10
