@@ -7,12 +7,16 @@ navLabel: Our Classroom
 navOrder: 5
 blocks:
   - type: text
-    body: |
-      Our classroom consists of developmentally appropriate toys, equipment, and activities that are rotated on a regular basis by the staff. Children spend time in many areas of the classroom including **building, creative play, family living, library, fine muscle/sensory, science, math, language/literacy, and art**.
+    body: >
+      Our classroom consists of developmentally appropriate toys, equipment, and
+      activities that are rotated on a regular basis by the staff. Children
+      spend time in many areas of the classroom including **building, creative
+      play, family living, library, fine muscle/sensory, science, math,
+      language/literacy, and art**.
   - type: gallery
     heading: Inside Our Classroom
     images:
-      - image: /assets/images/classroom.jpg
+      - image: /assets/images/web-9-.jpg
         alt: Our bright, welcoming classroom
       - image: /assets/images/classroom-aquarium.jpg
         alt: The aquarium corner
