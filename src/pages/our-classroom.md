@@ -4,7 +4,7 @@ subtitle: Take a look inside the spaces where your child will learn and play.
 heroColor: green
 showInNav: false
 navLabel: Our Classroom
-navOrder: 5
+navOrder: 6
 blocks:
   - type: text
     body: >
@@ -17,16 +17,17 @@ blocks:
     heading: Inside Our Classroom
     images:
       - image: /assets/images/web-9-.jpg
-        alt: Our bright, welcoming classroom
+        alt: Block Building
       - image: /assets/images/train.jpg
-        alt: The aquarium corner
+        alt: Train Table
       - image: /assets/images/web-15-.jpg
-        alt: Our gathering rug by the windows
+        alt: Painting Easels
       - image: /assets/images/chalk.jpg
-        alt: The play area
+        alt: Chalk Drawing
       - image: /assets/images/web-18-.jpg
-        alt: A cozy reading corner
+        alt: Rug Area
       - image: /assets/images/web-2-.jpg
+        alt: Playground Climber
   - type: banner
     color: green
     heading: Come see it in person
