@@ -1,16 +1,48 @@
 {
   "heading": "Our Day",
-  "image": "/assets/images/classroom-rocking-chair.jpg",
+  "image": "/assets/images/web-8-.jpg",
   "intro": "Each activity is listed in a typical order, with the understanding that flexibility is important, allowing for special circumstances and for making the preschool session run smoothly. Time is built into the schedule so that children can be prepared for transitions.",
   "schedule": [
-    { "time": "9:00 – 9:15 a.m.", "activity": "Greeting Time", "description": "Teachers meet and greet the children, allowing time for free play and settling in for the school day." },
-    { "time": "9:15 – 9:35 a.m.", "activity": "Gathering Time", "description": "Children come together in a large group. They learn about and discuss the theme of the day through music, movement, stories, and active participation. Activities for the day and their locations are described to the children." },
-    { "time": "9:35 – 10:30 a.m.", "activity": "Free Play Time", "description": "Children participate individually or cooperatively in activities at the various centers in the room. Activity centers include construction, art, creative play, manipulatives, and more." },
-    { "time": "10:30 – 10:40 a.m.", "activity": "Clean-up Time", "description": "All children are asked to help clean up in order to prepare for the next activity — group snack, outside play, or a special activity." },
-    { "time": "10:45 – 11:00 a.m.", "activity": "Snack Time", "description": "The school provides snack for the children. It is usually offered in a large group, but may also be a choice during free play time." },
-    { "time": "11:00 – 11:20 a.m.", "activity": "Small Group Time", "description": "Children meet with a teacher in small groups to do projects and other cognitive activities. The weekly theme is often represented in the projects." },
-    { "time": "11:30 – 12:00 noon", "activity": "Outside Play Time", "description": "Children are taken outside to play whenever possible, weather permitting. During winter months, families provide appropriate cold-weather clothing. If we are unable to go outside, we have active play inside the building." },
-    { "time": "12:00 noon", "activity": "Dismissal Time", "description": "Children are dismissed by the staff to parents or authorized drivers at the end of the school session, from the playground or classroom depending on the day's schedule." }
+    {
+      "time": "9:00 – 9:15 a.m.",
+      "activity": "Greeting Time",
+      "description": "Teachers meet and greet the children, allowing time for free play and settling in for the school day."
+    },
+    {
+      "time": "9:15 – 9:35 a.m.",
+      "activity": "Gathering Time",
+      "description": "Children come together in a large group. They learn about and discuss the theme of the day through music, movement, stories, and active participation. Activities for the day and their locations are described to the children."
+    },
+    {
+      "time": "9:35 – 10:30 a.m.",
+      "activity": "Free Play Time",
+      "description": "Children participate individually or cooperatively in activities at the various centers in the room. Activity centers include construction, art, creative play, manipulatives, and more."
+    },
+    {
+      "time": "10:30 – 10:40 a.m.",
+      "activity": "Clean-up Time",
+      "description": "All children are asked to help clean up in order to prepare for the next activity — group snack, outside play, or a special activity."
+    },
+    {
+      "time": "10:45 – 11:00 a.m.",
+      "activity": "Snack Time",
+      "description": "The school provides snack for the children. It is usually offered in a large group, but may also be a choice during free play time."
+    },
+    {
+      "time": "11:00 – 11:20 a.m.",
+      "activity": "Small Group Time",
+      "description": "Children meet with a teacher in small groups to do projects and other cognitive activities. The weekly theme is often represented in the projects."
+    },
+    {
+      "time": "11:30 – 12:00 noon",
+      "activity": "Outside Play Time",
+      "description": "Children are taken outside to play whenever possible, weather permitting. During winter months, families provide appropriate cold-weather clothing. If we are unable to go outside, we have active play inside the building."
+    },
+    {
+      "time": "12:00 noon",
+      "activity": "Dismissal Time",
+      "description": "Children are dismissed by the staff to parents or authorized drivers at the end of the school session, from the playground or classroom depending on the day's schedule."
+    }
   ],
   "note": "Extended hours are available from 12:00 – 1:00 p.m."
 }
