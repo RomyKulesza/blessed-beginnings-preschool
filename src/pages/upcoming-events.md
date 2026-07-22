@@ -1,5 +1,7 @@
 ---
 title: Upcoming Events
+subtitle: Join us as we 'march' in the Celebrate Holliston Parade on Saturday,
+  September 19, 2026
 heroColor: blue
 showInNav: true
 navOrder: 10
@@ -8,6 +10,5 @@ blocks:
     width: normal
     image: /assets/images/celebrate.jpg
     alt: Celebrate Holliston logo
-    caption: "Join us as we March in the Celebrate Holliston Parade on Saturday,
-      September 19, 2026            "
+    caption: "            "
 ---
