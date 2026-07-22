@@ -2,9 +2,9 @@
   "welcomeHeading": "A Nurturing Place to Grow",
   "heroImage": "/assets/images/web-4-.jpg",
   "tourVideo": "https://drive.google.com/file/d/1XBkYapT_4LqYyc8iPEznnAd28YHH9nZe/preview",
-  "welcomeBody": "Welcome to Blessed Beginnings Preschool, located at Christ The King Church in Holliston, Massachusetts! We are an early education preschool for children between 2 years 9 months through 6 years old, serving Holliston and the surrounding communities of Ashland, Milford, Medway, Hopkinton and beyond. Our comprehensive program emphasizes our deep commitment to children's success and sense of well-being.\n\nOur program is licensed by the MA Department of Early Education and Care, and we also meet the high standards of the National Association for the Education of Young Children (NAEYC). Please browse our site to learn more about how our program meets the needs and enriches the lives of young children and their families.",
+  "welcomeBody": "Welcome to Blessed Beginnings Preschool, located at Christ The King Church in Holliston, Massachusetts! We are an early education preschool for children between 2 years 9 months through 6 years old, serving Holliston and the surrounding communities. Our comprehensive program emphasizes our deep commitment to children's success and sense of well-being.\n\nOur program is licensed by the MA Department of Early Education and Care.\nPlease browse our site to learn more about how our program meets the needs and enriches the lives of young children and their families.",
   "ctaLabel": "Schedule a Tour",
-  "tourText": "Step inside Blessed Beginnings and see where your child's day unfolds — our bright classroom, cozy corners, and the spaces where curiosity comes to life.",
+  "tourText": "",
   "tourHeading": "Take a Virtual Tour",
   "testimonialsHeading": "What Parents Are Saying",
   "heroSubtitle": "A developmentally appropriate learning experience for your child in a safe, nurturing and welcoming environment in Holliston, Massachusetts.",
@@ -39,8 +39,8 @@
       "text": "A low teacher-to-child ratio so every child receives the individual attention they deserve."
     },
     {
-      "title": "NAEYC Accredited",
-      "text": "We meet the highest national standards for quality early childhood education."
+      "title": "Dedicated Professionals",
+      "text": "Caring and experienced teachers with a daily commitment to make families feel confident and secure."
     }
   ]
 }
