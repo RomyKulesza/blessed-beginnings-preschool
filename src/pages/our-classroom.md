@@ -20,7 +20,7 @@ blocks:
         alt: Our bright, welcoming classroom
       - image: /assets/images/train.jpg
         alt: The aquarium corner
-      - image: /assets/images/classroom-meeting-rug.jpg
+      - image: /assets/images/web-15-.jpg
         alt: Our gathering rug by the windows
       - image: /assets/images/classroom-play-area.jpg
         alt: The play area
