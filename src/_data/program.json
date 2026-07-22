@@ -1,9 +1,4 @@
 {
-  "heading": "Our Program",
-  "image": "/assets/images/classroom-aquarium.jpg",
-  "intro": "Our calendar year runs from the Monday after Labor Day through the beginning of June. Our students come from Holliston and many of the surrounding towns. Our low student-to-teacher ratio is intended to ensure a \"blessed beginning\" for children while promoting creativity, self-esteem, pride in accomplishments, independence, and a solid foundation for their future learning.",
-  "schedules": "We offer morning programs for children between the ages of 2 years 9 months and 6 years. You may choose a Tuesday/Thursday session, a Monday/Wednesday/Friday session, or a Monday through Friday session. All sessions operate from 9:00 am–12:00 pm.\n\nA \"Lunch and Learn\" program is offered, where children may stay to eat lunches brought from home, listen to a story, and participate in activities related to the story. This program runs from 12:00–1:00 pm. A modest additional fee is charged for the extended-day sessions.",
-  "goalsHeading": "Our Goals",
   "goals": [
     "To guide children as they learn about becoming part of a community of peers.",
     "To use developmentally appropriate curriculum to help children learn and grow, realizing that they each develop at their own, unique pace.",
@@ -13,13 +8,18 @@
     "To treat each child, every day, with the care, respect, and love that they deserve.",
     "To give children the time they need to play, where they may make choices, explore, and learn to think for themselves."
   ],
+  "heading": "Our Program",
+  "goalsHeading": "Our Goals",
   "curriculumHeading": "Our Curriculum",
-  "curriculumBody": "When we are asked about our preschool's curriculum, we realize that there is no simple answer! We develop our own curriculum, relying on our many experiences with young children as our best resource. To give the curriculum structure, we use the Massachusetts Department of Education guidelines. Learning can be enhanced by taking part in appropriate, meaningful activities.\n\nOur curriculum is play-based, giving your children the chance to develop social skills while using their imaginations, making their own decisions, and managing their feelings. In our classroom, while they are \"playing,\" you will see them planning, building, pretending, developing large and small muscle skills, being creative (and sometimes messy!) with art materials, learning math concepts, exploring the wonders of science, developing language skills, following directions, writing letters, drawing pictures, listening, singing, and dancing. There are many ways to enrich the lives of 3, 4, and 5 year old children at preschool!",
   "differentHeading": "What Makes Us Different",
+  "intro": "Our calendar year runs from the Monday after Labor Day through the beginning of June. Our students come from Holliston and many of the surrounding towns. Our low student-to-teacher ratio is intended to ensure a \"blessed beginning\" for children while promoting creativity, self-esteem, pride in accomplishments, independence, and a solid foundation for their future learning.",
   "different": [
     "Our program consists of one classroom with a low teacher/child ratio that is effective in creating a great learning experience for young children.",
     "We have earned our NAEYC accreditation.",
     "We offer a 2, 3, or 5 day schedule for children between the ages of 2.9 and 6 years.",
     "Our parent communication is outstanding, with two written progress summaries along with two to three scheduled conferences each school year. Written details of the children's day at school are sent home regularly."
-  ]
+  ],
+  "image": "/assets/images/web-7-.jpg",
+  "schedules": "We offer morning programs for children between the ages of 2 years 9 months and 6 years. You may choose a Tuesday/Thursday session, a Monday/Wednesday/Friday session, or a Monday through Friday session. All sessions operate from 9:00 am–12:00 pm.\n\nA \"Lunch and Learn\" program is offered, where children may stay to eat lunches brought from home, listen to a story, and participate in activities related to the story. This program runs from 12:00–1:00 pm. A modest additional fee is charged for the extended-day sessions.",
+  "curriculumBody": "When we are asked about our preschool's curriculum, we realize that there is no simple answer! We develop our own curriculum, relying on our many experiences with young children as our best resource. To give the curriculum structure, we use the Massachusetts Department of Education guidelines. Learning can be enhanced by taking part in appropriate, meaningful activities.\n\nOur curriculum is play-based, giving your children the chance to develop social skills while using their imaginations, making their own decisions, and managing their feelings. In our classroom, while they are \"playing,\" you will see them planning, building, pretending, developing large and small muscle skills, being creative (and sometimes messy!) with art materials, learning math concepts, exploring the wonders of science, developing language skills, following directions, writing letters, drawing pictures, listening, singing, and dancing. There are many ways to enrich the lives of 3, 4, and 5 year old children at preschool!"
 }
