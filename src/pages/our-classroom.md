@@ -22,7 +22,7 @@ blocks:
         alt: The aquarium corner
       - image: /assets/images/web-15-.jpg
         alt: Our gathering rug by the windows
-      - image: /assets/images/classroom-play-area.jpg
+      - image: /assets/images/chalk.jpg
         alt: The play area
       - image: /assets/images/classroom-rocking-chair.jpg
         alt: A cozy reading corner
