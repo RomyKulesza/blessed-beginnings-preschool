@@ -14,10 +14,13 @@ blocks:
     align: left
     text: "October 29, 2026  10:00am - 6:00pm   (Guest reader at
       3:00pm)                                               400 Washington
-      Street,  Suite 200  Holliston, MA  Thousands of titles from children’s
-      picture books to adult bestsellers.  Also offering a collection of games,
-      puzzles & toys!   Mention ‘Blessed Beginnings Preschool’ at
-      checkout!  online ordering available at  Aesopsfable.com "
+      Street,  Suite 200 Holliston, MA                       Thousands of titles
+      from children’s picture books to adult bestsellers.  Also offering a
+      collection of games, puzzles &
+      toys!                                         Mention ‘Blessed Beginnings
+      Preschool’ at
+      checkout!                                                         online
+      ordering available at  Aesopsfable.com "
   - type: heading
     align: left
     text: Join us to help support our GRACE Scholarship
